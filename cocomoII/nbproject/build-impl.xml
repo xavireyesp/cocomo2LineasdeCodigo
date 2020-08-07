@@ -26,6 +26,7 @@ is divided into following sections:
                 <antversion atleast="1.8.0"/>
             </not>
         </condition>
+        
     </fail>
     <target depends="test,jar,javadoc" description="Build and test whole project." name="default"/>
     <!-- 
