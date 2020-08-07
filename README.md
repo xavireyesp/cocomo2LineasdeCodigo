@@ -16,7 +16,7 @@ COCOMO II posee tres modelos denominados Composición de Aplicación, Diseño Te
 * **Raquel Lojano** [raquel]()
 * **Lorena Gudalima** [lore]()
 
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/xavireyesp/CocomoLineasDeCodigo/contributors) quíenes han participado en este proyecto. 
+También puedes mirar la lista de todos los [contribuyentes](https://github.com/xavireyesp/cocomo2LineasdeCodigo/contributors) quíenes han participado en este proyecto. 
 
 # Licencia 📄
 
