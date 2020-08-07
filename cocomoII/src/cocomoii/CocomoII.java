@@ -14,7 +14,7 @@ public class CocomoII {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) {//
         // TODO code application logic here
         
         System.out.println("Ejemplo");
@@ -24,7 +24,5 @@ public class CocomoII {
         
         System.out.println("Esta si");
         
-        
-    }
-    
+        System.out.println("sii");    
 }
