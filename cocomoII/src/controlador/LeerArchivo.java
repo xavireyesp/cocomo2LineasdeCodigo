@@ -9,6 +9,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 import javax.swing.JOptionPane;
 
 /**
@@ -57,11 +58,55 @@ public class LeerArchivo {
     }
     
     public int contarLineas() {
-     
-    
-    
-    return numCodigo;
-    }
+
+        String linea;
+        try {
+            while ((linea = bufer.readLine()) != null) {     
+//                linea = linea.trim();           //elimina espacios a la izquierda y derecha de la linea
+                //   System.out.println(linea);
+                if (linea.length() == 0) {     
+                    numBlanco++;               
+                   //  System.out.println("es una linea blanca");
+                } else if (linea.length() >= 2 && linea.substring(0, 2).equals("/*")) {    
+
+                    numComent++;  
+                     //System.out.println("es un comentario");
+                    //continue;       //continua con el siguiente ciclo, es decir, lee la siguiente linea
+                    try {
+                        while ((linea = bufer.readLine()) != null) {         
+                            linea = linea.trim();   
+                            //        System.out.println(linea);
+                           
+                            if (linea.length() == 0) {      
+                                numBlanco++;           
+                                // System.out.println("es una linea blanca");
+                            } else if (linea.length() >= 2 && linea.substring(0, 2).equals("*/")) {     
+                                numComent++;  
+                                  //System.out.println("es un comentario");
+                                break;     
+                            } else {
+                                numComent++; 
+                                  //System.out.println("es un comentario");
+                            }
+                        }
+                    } catch (IOException ex) {
+                        JOptionPane.showMessageDialog(null, "No se ha podido leer el archivo.\nError: " + ex);
+                    }
+                } else if (linea.substring(0, 1).equals("/") || linea.substring(0, 1).equals("*")) {  
+                    numComent++;   
+                      //System.out.println("es un comentario");
+                   
+                } else {      
+                    numCodigo++;   
+                     // System.out.println("es codigo");
+                }
+            }
+        } catch (IOException ex) {
+            JOptionPane.showMessageDialog(null, "No se ha podido leer el archivo.\nError: " + ex);
+        }
+
+        return numCodigo;
+    }   
     
     
     
