@@ -197,7 +197,7 @@
         </Component>
         <Component class="javax.swing.JToggleButton" name="jToggleButton1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Obtener LOD"/>
+            <Property name="text" type="java.lang.String" value="Obtener LOC"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jToggleButton1ActionPerformed"/>
@@ -264,9 +264,9 @@
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="10" style="1"/>
+          <Font name="Tahoma" size="12" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Total de Librerias de codigo LOD"/>
+        <Property name="text" type="java.lang.String" value="Total de Lineas de codigo LOC"/>
       </Properties>
     </Component>
   </SubComponents>

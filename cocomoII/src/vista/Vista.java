@@ -98,7 +98,7 @@ public class Vista extends javax.swing.JFrame {
             }
         });
 
-        jToggleButton1.setText("Obtener LOD");
+        jToggleButton1.setText("Obtener LOC");
         jToggleButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jToggleButton1ActionPerformed(evt);
@@ -154,8 +154,8 @@ public class Vista extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
-        jLabel4.setText("Total de Librerias de codigo LOD");
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel4.setText("Total de Lineas de codigo LOC");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
