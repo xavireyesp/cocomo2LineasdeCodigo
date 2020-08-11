@@ -98,7 +98,7 @@ public class LeerArchivo {
                    
                 } else {      
                     numCodigo++;   
-                     // System.out.println("es codigo");
+                     
                 }
             }
         } catch (IOException ex) {
